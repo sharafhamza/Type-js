@@ -1,0 +1,22 @@
+h1{
+    position: relative;
+    display: inline-block;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -10px;
+    width: 2px;
+    height: 25px;
+    background-color: #aa4141;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
